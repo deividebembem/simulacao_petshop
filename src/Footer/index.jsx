@@ -1,9 +1,11 @@
 import './styles.css'
 
-export default function Header() {
+export default function Footer () {
     return(
-        <header className="site-header">
-            <h1>Sistema de Gestão de Clientes</h1>
-        </header>
+        <footer className="site-footer">
+            <p>&copy; {new Date().getFullYear()} - Todos os direitos reservados</p>
+            <p>PetShop Amigo Fiel - BAHIA</p>
+        </footer>
     )
+
 }

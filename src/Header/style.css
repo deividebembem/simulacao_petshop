@@ -1,0 +1,40 @@
+.site-header {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	height: 82px;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 0 max(7.5vw, 40px);
+	background: #fbfaf6;
+}
+
+.brand { display: inline-flex; align-items: center; gap: 9px; color: #285d43; font-family: var(--display); font-size: 22px; font-weight: 600; line-height: 0.88; text-decoration: none; }
+.brand-mark { display: grid; width: 37px; height: 37px; place-items: center; border-radius: 50%; color: #fffaf0; background: #c66d48; font-family: var(--body); font-size: 20px; }
+.brand-light { color: #c66d48; }
+.brand small { display: block; margin-top: 5px; color: #738071; font-family: var(--body); font-size: 8px; font-weight: 700; letter-spacing: 2px; }
+.main-nav { display: flex; align-items: center; gap: clamp(20px, 4vw, 48px); }
+.main-nav a { color: #536256; font-size: 12px; text-decoration: none; }
+.main-nav a:hover, .main-nav a[aria-current='page'] { color: #c66d48; }
+
+.header-cta {
+	display: inline-flex;
+	min-height: 40px;
+	align-items: center;
+	gap: 13px;
+	padding: 0 15px;
+	border: 1px solid #cbd4c8;
+	border-radius: 3px;
+	color: #285d43;
+	font-size: 11px;
+	font-weight: 700;
+	text-decoration: none;
+	transition: transform 180ms ease;
+}
+
+@media (max-width: 620px) {
+	.site-header { height: auto; min-height: 74px; flex-wrap: wrap; padding: 16px 22px; }
+	.main-nav { order: 3; width: 100%; justify-content: space-between; padding-top: 7px; }
+	.header-cta { min-height: 36px; padding: 0 10px; font-size: 10px; }
+}

@@ -1,0 +1,17 @@
+.site-footer {
+	display: flex;
+	min-height: 76px;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	padding: 18px max(7.5vw, 40px);
+	color: #718071;
+	background: #fbfaf6;
+	font-size: 10px;
+}
+
+.site-footer p:last-child { color: #375d43; font-weight: 700; }
+
+@media (max-width: 520px) {
+	.site-footer { align-items: flex-start; flex-direction: column; gap: 7px; padding: 22px 25px; }
+}
